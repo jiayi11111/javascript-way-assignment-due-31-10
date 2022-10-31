@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 </title>
+</head>
+<body>
+        <h1>check the console.log</h1>
+</body>
+<script >
+    //Modeling a bank account
+    const account={
+    name:"Alex",
+    balance:0,
+    credit:250,
+   
+
+    describe(){
+        return`owner: ${this.name},balance ${this.balance} credit${this.credit} debiting${this.debiting} `
+    }
+  
+
+}
+
+// account.credit-=80;
+console.log(account.describe());
+account.credit -= 80;
+account.debiting=80;
+console.log(account.describe());
+
+
+//Adding character experience
+
+const aurora = {
+  name: "Aurora",
+  health: 150,
+  strength: 25,
+  xp:0,
+
+  // Return the character description
+  describe() {
+    return `${this.name} has ${this.health} health points and ${this
+      .strength} as strength, and ${this.xp} xp points`;
+  }
+};
+// TODO: create the character object here
+
+// Aurora is harmed by an arrow
+aurora.health -= 20;
+
+// Aurora equips a strength necklace
+aurora.strength += 10;
+
+// Aurora learn a new skill
+aurora.xp += 15;
+
+console.log(aurora.describe());
+
+//Modeling a dog
+// TODO: create the dog object here
+const dog={
+  name:"Fang",
+  species:"boardhound",
+  size:75,
+  bark:"Grrr! Grrr!",
+}
+
+console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
+console.log(`Look, a cat! ${dog.name} barks: ${dog.bark}`);
+
+
+
+</script>
+</html>
